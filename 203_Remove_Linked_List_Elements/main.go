@@ -33,11 +33,10 @@ func removeElements2(head *ListNode, val int) *ListNode {
 		return nil
 	}
 
-	result := removeElements2(head.Next, val)
+	head.Next = removeElements2(head.Next, val)
 	if head.Val == val {
-		return result
+		return head.Next
 	} else {
-		head.Next = result
 		return head
 	}
 }
