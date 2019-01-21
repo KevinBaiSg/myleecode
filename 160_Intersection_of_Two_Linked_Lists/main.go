@@ -1,5 +1,4 @@
-//package Intersection_of_Two_Linked_Lists
-package main
+package Intersection_of_Two_Linked_Lists
 
 /**
  * Definition for singly-linked list.
