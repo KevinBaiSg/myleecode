@@ -1,5 +1,6 @@
-//package Palindrome_Linked_List
-package main
+package Palindrome_Linked_List
+
+//package main
 
 /**
 ref: https://leetcode.com/problems/palindrome-linked-list/
@@ -61,6 +62,6 @@ func isPalindrome(head *ListNode) bool {
 	return true
 }
 
-func main() {
-	isPalindrome(&ListNode{1, &ListNode{2, &ListNode{2, &ListNode{1, nil}}}})
-}
+//func main() {
+//	isPalindrome(&ListNode{1, &ListNode{2, &ListNode{2, &ListNode{1, nil}}}})
+//}
