@@ -58,9 +58,9 @@ func Max(m ...int) int {
 	return max
 }
 
-func MaxMin(m ...int) (int, int) {
+func MaxMin(m ...int) (max, min int) {
 	if len(m) == 0 { return 0, 0 }
-	max, min := m[0], m[0]
+	max, min = m[0], m[0]
 	for _, v := range m {
 		if v < min {
 			min = v
