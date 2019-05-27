@@ -1,4 +1,4 @@
-package solution3
+package solution2
 
 func maxProfit(prices []int) int {
 	if prices == nil || len(prices) == 0 || len(prices) == 1 { return 0 }

@@ -39,7 +39,7 @@ func maxProfit(prices []int) int {
 		maxProfit = 0
 		minPrices = prices[0]
 	)
-	
+
 	for i := 1; i < len(prices); i++ {
 		if prices[i] - minPrices < 0 {
 			minPrices = prices[i]
