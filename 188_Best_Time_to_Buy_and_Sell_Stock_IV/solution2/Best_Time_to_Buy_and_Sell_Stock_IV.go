@@ -1,4 +1,4 @@
-package _123_Best_Time_to_Buy_and_Sell_Stock_III
+package solution2
 
 func maxProfit(k int, prices []int) int {
 	if k >= len(prices)/2 {

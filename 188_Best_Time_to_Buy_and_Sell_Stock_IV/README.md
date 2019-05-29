@@ -32,6 +32,8 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
 ```  
 
 ### 解决方法
+
+#### Solution1
 * 思路 DP
 MaxProfit=MP 最大收益
 
@@ -42,3 +44,17 @@ MaxProfit=MP 最大收益
         for k
             MP[i,k,0]=Max(MP[i-1,k,0],MP[i-1,k,1]+prices[i])
             MP[i,k,1]=Max(MP[i-1,k-1,0]-prices[i],MP[i-1,k,1])
+            
+#### Solution2
+* 思路 DP
+通过数组记录每次buy & sell 后的最大值（eg： 第一次买入3元， 其实就是目前收入 -3）。
+
+1.第k次buy就是 上一次卖出剩下的钱 - 本次购买需要的钱
+2.第k次sell就是 第k次买入 + 本次卖出的钱
+
+ buy[j] = max(buy[j], sell[j-1] - prices[i])
+ sell[j] = max(sell[j], buy[j] + prices[i])
+ 
+ 
+ ### 优化
+ 如果k > len(prices)/2 不用考虑交易次数，可以把问题转化成无限购买次数
