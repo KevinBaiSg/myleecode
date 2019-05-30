@@ -18,6 +18,7 @@ Explanation: transactions = [buy, sell, cooldown, buy, sell]
 ```  
 
 ### 解决方法
+#### solution1
 * 思路 DP
 MaxProfit=MP 最大收益
 
@@ -29,3 +30,13 @@ MaxProfit=MP 最大收益
         MP[i,0,1]=MP[i,1,0]+prices[i]
         MP[i,1,0]=Max(MP[i,0,0]-prices[i],MP[i,1,0])
         res = Max(MP[i,0,0], MP[i,0,1], MP[i,1,0])
+
+#### solution2
+* 思路 DP
+
+#### Solution2
+* 思路 DP
+通过数组记录每次buy & sell & cooldown 后的最大值
+buy[i] = Max(buy[i-1], cooldown[i-1]-prices[i])
+sell[i] = Max(buy[i-1]+prices[i], sell[i-1])
+cooldown[i] = sell[i-1]
