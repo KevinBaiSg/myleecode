@@ -6,38 +6,33 @@ func main()  {
 }
 func isMatch(s string, p string) bool {
 	if s == p { return true }
-	if len(s) == 0 || len(p) == 0 { return false }
 
-	dp := make([][]bool, len(s), len(s))
-	for i := 0; i < len(s); i++ {
-		dp[i] = make([]bool, len(p), len(p))
-	}
-	
-	if p[0] == s[0] || p[0] == '.' {
-		dp[0][0] = true
+	dp := make([][]bool, len(s)+1, len(s)+1)
+	for i := 0; i < len(s)+1; i++ {
+		dp[i] = make([]bool, len(p)+1, len(p)+1)
 	}
 
+	dp[0][0] = true
 	for j := 1; j < len(p); j++ {
 		if p[j] == '*' && dp[0][j-1] {
-			dp[0][j] = true
+			dp[0][j+1] = true
 		}
 	}
 
-	for i := 1; i < len(s); i++ {
-		for j := 1; j < len(p); j++ {
-			if p[j] == '*' {
-				if i > 1 && j > 1 {
-					dp[i][j] = dp[i-2][j-2] || dp[i-1][j-1] || dp[i-1][j]
-				} else {
-					dp[i][j] = dp[i-1][j-1] || dp[i-1][j]
+	for i := 0; i < len(s); i++ {
+		for j := 0; j < len(p); j++ {
+			if p[j] == s[i] || p[j] == '.' {
+				dp[i+1][j+1] = dp[i][j]
+			} else if p[j] == '*' {
+				if p[j - 1] != s[i] {
+					dp[i+1][j+1] = dp[i+1][j-1]
 				}
-			} else if s[i] == p[j-1] || p[j] == '.' {
-				dp[i][j] = dp[i-1][j-1]
-			} else {
-				dp[i][j] = dp[i-1][j-1] && s[i] == p[j]
+				if s[i] == p[j-1] || p[j-1] == '.' {
+					dp[i+1][j+1] = dp[i][j+1] || dp[i+1][j] || dp[i+1][j-1]
+				}
 			}
 		}
 	}
 
-	return dp[len(s) - 1][len(p) - 1]
+	return dp[len(s)][len(p)]
 }
