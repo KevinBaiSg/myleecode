@@ -34,6 +34,7 @@ leetcode Golang 实现，用于算法复习和 Golang 锻炼
 | 0027 | [Remove Element](https://github.com/KevinBaiSg/myleecode/tree/master/0027_Remove_Element) | Easy |
 | 0028 | [Implement strStr](https://github.com/KevinBaiSg/myleecode/tree/master/0028_Implement_strStr) | Easy |
 | 0070 | [climbing stairs](https://github.com/KevinBaiSg/myleecode/tree/master/0070_climbing_stairs) | Easy |
+| 0071 | [Simplify Path](https://github.com/KevinBaiSg/myleecode/tree/master/0071_Simplify_Path) | Easy |
 | 0083 | [remove duplicates from sorted list](https://github.com/KevinBaiSg/myleecode/tree/master/0083_remove_duplicates_from_sorted_list) | Easy |
 | 0092 | [Reverse Linked List II](https://github.com/KevinBaiSg/myleecode/tree/master/0092_Reverse_Linked_List_II) | Medium |
 | 0120 | [Triangle](https://github.com/KevinBaiSg/myleecode/tree/master/0120_Triangle) | Medium |
