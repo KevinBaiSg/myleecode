@@ -34,9 +34,11 @@ leetcode Golang 实现，用于算法复习和 Golang 锻炼
 | 0027 | [Remove Element](https://github.com/KevinBaiSg/myleecode/tree/master/0027_Remove_Element) | Easy |
 | 0028 | [Implement strStr](https://github.com/KevinBaiSg/myleecode/tree/master/0028_Implement_strStr) | Easy |
 | 0070 | [climbing stairs](https://github.com/KevinBaiSg/myleecode/tree/master/0070_climbing_stairs) | Easy |
-| 0071 | [Simplify Path](https://github.com/KevinBaiSg/myleecode/tree/master/0071_Simplify_Path) | Easy |
+| 0071 | [Simplify Path](https://github.com/KevinBaiSg/myleecode/tree/master/0071_Simplify_Path) | Medium |
 | 0083 | [remove duplicates from sorted list](https://github.com/KevinBaiSg/myleecode/tree/master/0083_remove_duplicates_from_sorted_list) | Easy |
+| 0087 | [Scramble String](https://github.com/KevinBaiSg/myleecode/tree/master/0087_Scramble_String) | Hard |
 | 0092 | [Reverse Linked List II](https://github.com/KevinBaiSg/myleecode/tree/master/0092_Reverse_Linked_List_II) | Medium |
+| 0102 | [Binary Tree Level Order Traversal](https://github.com/KevinBaiSg/myleecode/tree/master/0102_Binary_Tree_Level_Order_Traversal) | Medium |
 | 0120 | [Triangle](https://github.com/KevinBaiSg/myleecode/tree/master/0120_Triangle) | Medium |
 | 0121 | [Best Time to Buy and Sell Stock](https://github.com/KevinBaiSg/myleecode/tree/master/0121_Best_Time_to_Buy_and_Sell_Stock) | Easy |
 | 0122 | [Best Time to Buy and Sell Stock II](https://github.com/KevinBaiSg/myleecode/tree/master/0122_Best_Time_to_Buy_and_Sell_Stock_II) | Easy |
@@ -57,3 +59,4 @@ leetcode Golang 实现，用于算法复习和 Golang 锻炼
 | 0443 | [String Compression](https://github.com/KevinBaiSg/myleecode/tree/master/0443_String_Compression) | Easy |
 | 0563 | [Binary Tree Tilt](https://github.com/KevinBaiSg/myleecode/tree/master/0563_Binary_Tree_Tilt) | Easy |
 | 0714 | [Best Time to Buy and Sell Stock with Transaction Fee](https://github.com/KevinBaiSg/myleecode/tree/master/0714_Best_Time_to_Buy_and_Sell_Stock_with_Transaction_Fee) | Medium |
+| 0773 | [Sliding Puzzle](https://github.com/KevinBaiSg/myleecode/tree/master/0773_Sliding_Puzzle) | Hard |
