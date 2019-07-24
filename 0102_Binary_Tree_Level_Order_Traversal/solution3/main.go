@@ -1,5 +1,7 @@
 package solution3
 
+import . "github.com/KevinBaiSg/myleecode/common"
+
 /**
  * Definition for a binary tree node.
  * type TreeNode struct {
@@ -8,12 +10,6 @@ package solution3
  *     Right *TreeNode
  * }
  */
-
-type TreeNode struct {
-	Val int
-	Left *TreeNode
-	Right *TreeNode
-}
 
 func levelOrder(root *TreeNode) [][]int {
 	// 边界
@@ -32,15 +28,15 @@ func levelOrder(root *TreeNode) [][]int {
 	// 当前 stack pop 节点的 level
 	level := 0 //
 
-	if level >= stack.size() {
+	if level >= stack.Size() {
 		levels = append(levels, make([]int, 0))
 	}
-	stack.push(root) // root 入栈
+	stack.Push(root) // root 入栈
 
 	levels[level] = append(levels[level], root.Val)
 
-	for !stack.isEmpty() {
-		last := stack.peek()
+	for !stack.IsEmpty() {
+		last := stack.Peek()
 		// 入栈
 		if last.Left != nil && visited[last.Left] != true {
 			level ++
@@ -48,7 +44,7 @@ func levelOrder(root *TreeNode) [][]int {
 				levels = append(levels, make([]int, 0))
 			}
 			levels[level] = append(levels[level], last.Left.Val)
-			stack.push(last.Left)
+			stack.Push(last.Left)
 			visited[last.Left] = true
 
 		} else if last.Right != nil  && visited[last.Right] != true {
@@ -57,66 +53,13 @@ func levelOrder(root *TreeNode) [][]int {
 				levels = append(levels, make([]int, 0))
 			}
 			levels[level] = append(levels[level], last.Right.Val)
-			stack.push(last.Right)
+			stack.Push(last.Right)
 			visited[last.Right] = true
 		} else { // 出栈
-			stack.pop()
+			stack.Pop()
 			level--
 		}
 	}
 
 	return levels
-}
-
-
-type Stack struct {
-	items []*TreeNode
-}
-
-func (s *Stack) NewStack() *Stack {
-	s.items = []*TreeNode{}
-	return s
-}
-
-func (s *Stack) pop() *TreeNode {
-	if s.items == nil { return nil }
-
-	if len(s.items) != 0 {
-		item := s.items[len(s.items) - 1]
-		s.items = s.items[:len(s.items) - 1]
-		return item
-	}
-	return nil
-}
-
-func (s *Stack) peek() *TreeNode {
-	if s.items == nil { return nil }
-
-	if len(s.items) != 0 {
-		item := s.items[len(s.items) - 1]
-		return item
-	}
-	return nil
-}
-
-func (s *Stack) push(node *TreeNode) {
-	if s.items == nil { return }
-
-	s.items = append(s.items, node)
-}
-
-func (s *Stack) isEmpty() bool {
-	if s.items == nil { return true }
-
-	if len(s.items) == 0 {
-		return true
-	}
-
-	return false
-}
-
-func (s *Stack) size() int {
-	if s.items == nil { return 0 }
-
-	return len(s.items)
 }

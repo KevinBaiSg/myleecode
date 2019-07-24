@@ -1,5 +1,7 @@
 package solution2
 
+import . "github.com/KevinBaiSg/myleecode/common"
+
 /**
  * Definition for a binary tree node.
  * type TreeNode struct {
@@ -8,12 +10,6 @@ package solution2
  *     Right *TreeNode
  * }
  */
-
-type TreeNode struct {
-	Val int
-	Left *TreeNode
-	Right *TreeNode
-}
 
 func levelOrder(root *TreeNode) [][]int {
 	// 边界
