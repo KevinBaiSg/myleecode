@@ -62,3 +62,4 @@ leetcode Golang 实现，用于算法复习和 Golang 锻炼
 | 0563 | [Binary Tree Tilt](https://github.com/KevinBaiSg/myleecode/tree/master/0563_Binary_Tree_Tilt) | Easy |
 | 0714 | [Best Time to Buy and Sell Stock with Transaction Fee](https://github.com/KevinBaiSg/myleecode/tree/master/0714_Best_Time_to_Buy_and_Sell_Stock_with_Transaction_Fee) | Medium |
 | 0773 | [Sliding Puzzle](https://github.com/KevinBaiSg/myleecode/tree/master/0773_Sliding_Puzzle) | Hard |
+| 1038 | [Binary Search Tree to Greater Sum Tree](https://github.com/KevinBaiSg/myleecode/tree/master/1038_Binary_Search_Tree_to_Greater_Sum_Tree) | Medium |
