@@ -10,45 +10,78 @@ import . "github.com/KevinBaiSg/myleecode/common"
  *     Right *TreeNode
  * }
  */
-
-func levelOrder(root *TreeNode) [][]int {
+func maxDepth(root *TreeNode) int {
 	// 边界
-	if root == nil {
-		return [][]int{}
-	}
-	if root.Left == nil && root.Right == nil {
-		return [][]int{
-			{root.Val},
-		}
-	}
+	if root == nil { return 0 }
+	if root.Left == nil && root.Right == nil { return 1 }
 
-	queue := Queue{}
-	queue.NewQueue()
-	levels := make([][]int, 0)
+	// queue
+	var (
+		max = 0
+		q = Queue{}
+	)
 
-	queue.Enqueue(root)
+	q.NewQueue()
 
-	for !queue.IsEmpty() {
-		n, level := queue.Size(), make([]int, 0)
-
-		// 处理 level
+	q.enqueue(root)
+	for !q.isEmpty() {
+		max++
+		n := q.size()
 		for i := 0; i < n; i++ {
-			// 处理树
-			if queue.Peek().Left != nil {
-				queue.Enqueue(queue.Peek().Left)
+			node := q.dequeue()
+			if node.Left != nil {
+				q.enqueue(node.Left)
 			}
-
-			if queue.Peek().Right != nil {
-				queue.Enqueue(queue.Peek().Right)
+			if node.Right != nil {
+				q.enqueue(node.Right)
 			}
-
-			level = append(level, queue.Peek().Val)
-			queue.Dequeue()
 		}
-
-		// 添加 level
-		levels = append(levels, level)
 	}
 
-	return levels
+	return max
+}
+
+type Queue struct {
+	items []*TreeNode
+}
+
+func (q *Queue) NewQueue() *Queue {
+	q.items = make([]*TreeNode, 0)
+	return q
+}
+
+// enqueue
+func (q *Queue) enqueue(node *TreeNode) {
+	if q.items == nil { return }
+
+	q.items = append(q.items, node)
+}
+
+// dequeue
+func (q *Queue) dequeue() *TreeNode {
+	if q.items == nil { return nil }
+	if len(q.items) == 0 { return nil }
+
+	n := q.items[0]
+	q.items = q.items[1:]
+	return n
+}
+
+// size
+func (q *Queue) size() int {
+	if q.items == nil { return 0 }
+	return len(q.items)
+}
+
+// isEmpty
+func (q *Queue) isEmpty() bool {
+	if q.items == nil { return true }
+	return len(q.items) == 0
+}
+
+// peek
+func (q *Queue) peek() *TreeNode {
+	if q.items == nil { return nil }
+	if len(q.items) == 0 { return nil }
+	return q.items[0]
 }
