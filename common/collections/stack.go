@@ -1,15 +1,17 @@
-package common
+package collections
+
+import "github.com/KevinBaiSg/myleecode/common"
 
 type Stack struct {
-	items []*TreeNode
+	items []*common.TreeNode
 }
 
 func (s *Stack) NewStack() *Stack {
-	s.items = []*TreeNode{}
+	s.items = []*common.TreeNode{}
 	return s
 }
 
-func (s *Stack) Pop() *TreeNode {
+func (s *Stack) Pop() *common.TreeNode {
 	if s.items == nil { return nil }
 
 	if len(s.items) != 0 {
@@ -20,7 +22,7 @@ func (s *Stack) Pop() *TreeNode {
 	return nil
 }
 
-func (s *Stack) Peek() *TreeNode {
+func (s *Stack) Peek() *common.TreeNode {
 	if s.items == nil { return nil }
 
 	if len(s.items) != 0 {
@@ -30,7 +32,7 @@ func (s *Stack) Peek() *TreeNode {
 	return nil
 }
 
-func (s *Stack) Push(node *TreeNode) {
+func (s *Stack) Push(node *common.TreeNode) {
 	if s.items == nil { return }
 
 	s.items = append(s.items, node)

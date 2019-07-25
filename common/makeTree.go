@@ -3,6 +3,8 @@ package common
 import (
 	"strconv"
 	"strings"
+
+	"github.com/KevinBaiSg/myleecode/common/collections"
 )
 
 type TreeNode struct {
@@ -17,7 +19,7 @@ func MakeTree(tree string) *TreeNode {
 	tree = strings.Trim(tree, "]")
 	nodes := strings.Split(tree, ",")
 
-	queue := Queue{}
+	queue := collections.Queue{}
 	queue.NewQueue()
 
 	i, e := strconv.Atoi(nodes[0])
@@ -27,7 +29,7 @@ func MakeTree(tree string) *TreeNode {
 	queue.Enqueue(&root)
 
 	index := 1
-	for !queue.isEmpty() {
+	for !queue.IsEmpty() {
 		node := queue.Dequeue()
 		if index < len(nodes){
 			node.Left = s2node(nodes[index])

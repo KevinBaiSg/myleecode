@@ -1,6 +1,9 @@
 package solution1
 
-import . "github.com/KevinBaiSg/myleecode/common"
+import (
+	. "github.com/KevinBaiSg/myleecode/common"
+	"github.com/KevinBaiSg/myleecode/common/collections"
+)
 
 /**
  * Definition for a binary tree node.
@@ -22,7 +25,7 @@ func levelOrder(root *TreeNode) [][]int {
 		}
 	}
 
-	queue := Queue{}
+	queue := collections.Queue{}
 	queue.NewQueue()
 	levels := make([][]int, 0)
 

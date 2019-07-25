@@ -1,6 +1,9 @@
 package solution3
 
-import . "github.com/KevinBaiSg/myleecode/common"
+import (
+	. "github.com/KevinBaiSg/myleecode/common"
+	"github.com/KevinBaiSg/myleecode/common/collections"
+)
 
 /**
  * Definition for a binary tree node.
@@ -16,7 +19,7 @@ func levelOrder(root *TreeNode) [][]int {
 	if root == nil { return [][]int{} }
 
 	// 使用 stack 处理 tree 访问顺序
-	stack := Stack{}
+	stack := collections.Stack{}
 	stack.NewStack()
 
 	// 保存节点是否访问过的状态
