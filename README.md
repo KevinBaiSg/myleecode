@@ -39,6 +39,8 @@ leetcode Golang 实现，用于算法复习和 Golang 锻炼
 | 0087 | [Scramble String](https://github.com/KevinBaiSg/myleecode/tree/master/0087_Scramble_String) | Hard |
 | 0092 | [Reverse Linked List II](https://github.com/KevinBaiSg/myleecode/tree/master/0092_Reverse_Linked_List_II) | Medium |
 | 0102 | [Binary Tree Level Order Traversal](https://github.com/KevinBaiSg/myleecode/tree/master/0102_Binary_Tree_Level_Order_Traversal) | Medium |
+| 0104 | [Maximum Depth of Binary Tree](https://github.com/KevinBaiSg/myleecode/tree/master/0104_Maximum_Depth_of_Binary_Tree) | Easy |
+| 0111 | [Minimum Depth of Binary Tree](https://github.com/KevinBaiSg/myleecode/tree/master/0111_Minimum_Depth_of_Binary_Tree) | Easy |
 | 0120 | [Triangle](https://github.com/KevinBaiSg/myleecode/tree/master/0120_Triangle) | Medium |
 | 0121 | [Best Time to Buy and Sell Stock](https://github.com/KevinBaiSg/myleecode/tree/master/0121_Best_Time_to_Buy_and_Sell_Stock) | Easy |
 | 0122 | [Best Time to Buy and Sell Stock II](https://github.com/KevinBaiSg/myleecode/tree/master/0122_Best_Time_to_Buy_and_Sell_Stock_II) | Easy |
