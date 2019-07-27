@@ -1,8 +1,8 @@
 package solution3
 
 import (
-	. "github.com/KevinBaiSg/myleecode/common"
 	"github.com/KevinBaiSg/myleecode/common/collections"
+	"github.com/KevinBaiSg/myleecode/common/makeTree"
 )
 
 /**
@@ -14,7 +14,7 @@ import (
  * }
  */
 
-func levelOrder(root *TreeNode) [][]int {
+func levelOrder(root *makeTree.TreeNode) [][]int {
 	// 边界
 	if root == nil { return [][]int{} }
 
@@ -23,7 +23,7 @@ func levelOrder(root *TreeNode) [][]int {
 	stack.NewStack()
 
 	// 保存节点是否访问过的状态
-	visited := make(map[*TreeNode]bool)
+	visited := make(map[*makeTree.TreeNode]bool)
 
 	// level 数组
 	levels := make([][]int, 0)

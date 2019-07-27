@@ -1,6 +1,8 @@
 package solution2
 
-import . "github.com/KevinBaiSg/myleecode/common"
+import (
+	"github.com/KevinBaiSg/myleecode/common/makeTree"
+)
 
 /**
  * Definition for a binary tree node.
@@ -11,7 +13,7 @@ import . "github.com/KevinBaiSg/myleecode/common"
  * }
  */
 
-func levelOrder(root *TreeNode) [][]int {
+func levelOrder(root *makeTree.TreeNode) [][]int {
 	// 边界
 	if root == nil {
 		return [][]int{}
@@ -24,7 +26,7 @@ func levelOrder(root *TreeNode) [][]int {
 	return levels
 }
 
-func dfs(root *TreeNode, level int, levels *[][]int) {
+func dfs(root *makeTree.TreeNode, level int, levels *[][]int) {
 	if root == nil { return }
 
 	if level >= len(*levels) {

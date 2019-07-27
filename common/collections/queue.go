@@ -1,13 +1,15 @@
 package collections
 
-import "github.com/KevinBaiSg/myleecode/common"
+import (
+	. "github.com/KevinBaiSg/myleecode/common"
+)
 
 type Queue struct {
-	items []*common.TreeNode
+	items []*TreeNode
 }
 
 func (q *Queue) NewQueue() *Queue {
-	q.items = []*common.TreeNode{}
+	q.items = []*TreeNode{}
 	return q
 }
 
@@ -21,7 +23,7 @@ func (q *Queue) Size() int {
 	return len(q.items)
 }
 
-func (q *Queue) Peek() *common.TreeNode {
+func (q *Queue) Peek() *TreeNode {
 	if q.items == nil { return nil }
 
 	if len(q.items) != 0 {
@@ -31,7 +33,7 @@ func (q *Queue) Peek() *common.TreeNode {
 	return nil
 }
 
-func (q *Queue) Dequeue() *common.TreeNode {
+func (q *Queue) Dequeue() *TreeNode {
 	if q.items == nil { return nil }
 
 	if len(q.items) == 0 { return nil }
@@ -41,7 +43,7 @@ func (q *Queue) Dequeue() *common.TreeNode {
 	return n
 }
 
-func (q *Queue) Enqueue(node *common.TreeNode) {
+func (q *Queue) Enqueue(node *TreeNode) {
 	if q.items == nil { return }
 
 	q.items = append(q.items, node)

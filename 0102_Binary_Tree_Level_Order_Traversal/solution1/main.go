@@ -1,8 +1,8 @@
 package solution1
 
 import (
-	. "github.com/KevinBaiSg/myleecode/common"
 	"github.com/KevinBaiSg/myleecode/common/collections"
+	"github.com/KevinBaiSg/myleecode/common/makeTree"
 )
 
 /**
@@ -14,7 +14,7 @@ import (
  * }
  */
 
-func levelOrder(root *TreeNode) [][]int {
+func levelOrder(root *makeTree.TreeNode) [][]int {
 	// 边界
 	if root == nil {
 		return [][]int{}

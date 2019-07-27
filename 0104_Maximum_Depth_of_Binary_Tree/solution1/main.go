@@ -1,6 +1,8 @@
 package solution1
 
-import . "github.com/KevinBaiSg/myleecode/common"
+import (
+	"github.com/KevinBaiSg/myleecode/common/makeTree"
+)
 
 /**
  * Definition for a binary tree node.
@@ -10,7 +12,7 @@ import . "github.com/KevinBaiSg/myleecode/common"
  *     Right *TreeNode
  * }
  */
-func maxDepth(root *TreeNode) int {
+func maxDepth(root *makeTree.TreeNode) int {
 	// 边界
 	if root == nil { return 0 }
 	if root.Left == nil && root.Right == nil { return 1 }
@@ -42,23 +44,23 @@ func maxDepth(root *TreeNode) int {
 }
 
 type Queue struct {
-	items []*TreeNode
+	items []*makeTree.TreeNode
 }
 
 func (q *Queue) NewQueue() *Queue {
-	q.items = make([]*TreeNode, 0)
+	q.items = make([]*makeTree.TreeNode, 0)
 	return q
 }
 
 // enqueue
-func (q *Queue) enqueue(node *TreeNode) {
+func (q *Queue) enqueue(node *makeTree.TreeNode) {
 	if q.items == nil { return }
 
 	q.items = append(q.items, node)
 }
 
 // dequeue
-func (q *Queue) dequeue() *TreeNode {
+func (q *Queue) dequeue() *makeTree.TreeNode {
 	if q.items == nil { return nil }
 	if len(q.items) == 0 { return nil }
 
@@ -80,7 +82,7 @@ func (q *Queue) isEmpty() bool {
 }
 
 // peek
-func (q *Queue) peek() *TreeNode {
+func (q *Queue) peek() *makeTree.TreeNode {
 	if q.items == nil { return nil }
 	if len(q.items) == 0 { return nil }
 	return q.items[0]

@@ -1,17 +1,12 @@
-package common
+package makeTree
 
 import (
 	"strconv"
 	"strings"
 
+	. "github.com/KevinBaiSg/myleecode/common"
 	"github.com/KevinBaiSg/myleecode/common/collections"
 )
-
-type TreeNode struct {
-	Val int
-	Left *TreeNode
-	Right *TreeNode
-}
 
 func MakeTree(tree string) *TreeNode {
 	tree = strings.TrimSpace(tree)

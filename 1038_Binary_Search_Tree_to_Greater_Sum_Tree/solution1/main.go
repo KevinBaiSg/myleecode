@@ -1,7 +1,7 @@
 package solution1
 
 import (
-	. "github.com/KevinBaiSg/myleecode/common"
+	"github.com/KevinBaiSg/myleecode/common/makeTree"
 )
 
 /**
@@ -12,13 +12,13 @@ import (
  *     Right *TreeNode
  * }
  */
-func bstToGst(root *TreeNode) *TreeNode {
+func bstToGst(root *makeTree.TreeNode) *makeTree.TreeNode {
 	if root == nil { return nil }
 	next(root, 0)
 	return root
 }
 
-func next(root *TreeNode, value int) int {
+func next(root *makeTree.TreeNode, value int) int {
 	if root != nil {
 		value = next(root.Right, value)
 		value = root.Val + value

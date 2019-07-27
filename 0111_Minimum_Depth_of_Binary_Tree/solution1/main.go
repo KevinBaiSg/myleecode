@@ -1,6 +1,8 @@
 package solution1
 
-import . "github.com/KevinBaiSg/myleecode/common"
+import (
+	"github.com/KevinBaiSg/myleecode/common/makeTree"
+)
 
 /**
  * Definition for a binary tree node.
@@ -10,7 +12,7 @@ import . "github.com/KevinBaiSg/myleecode/common"
  *     Right *TreeNode
  * }
  */
-func minDepth(root *TreeNode) int {
+func minDepth(root *makeTree.TreeNode) int {
 	//     边界
 	if root == nil { return 0 }
 	if root.Left == nil && root.Right == nil { return 1 }
