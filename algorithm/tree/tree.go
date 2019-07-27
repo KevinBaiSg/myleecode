@@ -72,7 +72,38 @@ func inOrderTraversal(root *TreeNode) (result []int) {
 }
 
 func postOrderTraversal(root *TreeNode) (result []int) {
-	// TODO:
+	if root == nil { return []int{} }
+
+	/*
+	1.增加标志位标识右节点是否访问过。
+	2.方法二：转化问题，左->右->根 = 翻转(根->右->左)
+	*/
+	stack := Stack{}
+	stack.NewStack()
+
+	pNode := root
+	/*
+		pLastVisited 用于标记上次访问是否为该右节点
+	*/
+	var pLastVisited *TreeNode  = nil
+
+	for pNode != nil || !stack.IsEmpty() {
+		if pNode != nil {
+			stack.Push(pNode)
+			pNode = pNode.Left
+		} else {
+			node := stack.Peek()
+			if node.Right == nil || node.Right == pLastVisited {
+				// node.Right == nil 没有右节点，继续出栈
+				// node.Right == pLastVisited 代表右节点刚刚访问过，继续出栈
+				result = append(result, node.Val)
+				stack.Pop()
+				pLastVisited = node
+			} else {
+				pNode = node.Right // 可以看做子树
+			}
+		}
+	}
 	return
 }
 

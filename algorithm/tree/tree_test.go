@@ -103,22 +103,22 @@ func TestInOrderTraversal(t *testing.T) {
 	}
 }
 
-//func TestPostOrderTraversal(t *testing.T) {
-//	cases := []struct{
-//		in 		string
-//		want 	string
-//	}{
-//		{"[3,9,20,null,null,15,7]", "[9,15,7,20,3,]"},
-//	}
-//
-//	for _, c := range cases {
-//		result := postOrderTraversal(MakeTree(c.in))
-//		if array2string(result) !=  c.want {
-//			t.Fatalf("failed, want: %s; got: %s", c.want, array2string(result))
-//		}
-//		t.Logf("success result: %s", c.want)
-//	}
-//}
+func TestPostOrderTraversal(t *testing.T) {
+	cases := []struct{
+		in 		string
+		want 	string
+	}{
+		{"[3,9,20,null,null,15,7]", "[9,15,7,20,3,]"},
+	}
+
+	for _, c := range cases {
+		result := postOrderTraversal(MakeTree(c.in))
+		if array2string(result) !=  c.want {
+			t.Fatalf("failed, want: %s; got: %s", c.want, array2string(result))
+		}
+		t.Logf("success result: %s", c.want)
+	}
+}
 
 func TestLayerTraver(t *testing.T) {
 	cases := []struct{
