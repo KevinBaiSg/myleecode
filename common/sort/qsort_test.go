@@ -11,7 +11,8 @@ func TestQuickSort(t *testing.T) {
 		in		[]int
 		want 	[]int
 	}{
-		{[]int{1, 2, 4}, []int{2, 4, 3}},
+		{[]int{}, []int{}},
+		{[]int{-10, 200, 3, 6, 8, 30}, []int{-10, 3, 6, 8, 30, 200}},
 	}
 	for _, c := range cases {
 		sort := QuickSort(c.in)
@@ -23,5 +24,11 @@ func TestQuickSort(t *testing.T) {
 				t.Fatalf("sort error, want: %s; got: %s", SerialIntArray(c.want), SerialIntArray(sort))
 			}
 		}
+	}
+}
+
+func BenchmarkQuickSort(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		QuickSort([]int{-10, 200, 3, 6, 8, 30})
 	}
 }
