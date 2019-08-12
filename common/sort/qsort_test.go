@@ -13,15 +13,13 @@ func TestQuickSort(t *testing.T) {
 	}{
 		{[]int{}, []int{}},
 		{[]int{-10, 200, 3, 6, 8, 30}, []int{-10, 3, 6, 8, 30, 200}},
+		{[]int{-1,0,1,2,-1,-4}, []int{-4,-1,-1,0,1,2}},
 	}
 	for _, c := range cases {
-		sort := QuickSort(c.in)
-		if len(c.want) != len(sort) {
-			t.Fatalf("sort error, want: %s; got: %s", SerialIntArray(c.want), SerialIntArray(sort))
-		}
-		for i := 0; i < len(sort); i++ {
-			if sort[i] != c.want[i] {
-				t.Fatalf("sort error, want: %s; got: %s", SerialIntArray(c.want), SerialIntArray(sort))
+		QuickSort(c.in)
+		for i := 0; i < len(c.in); i++ {
+			if c.in[i] != c.want[i] {
+				t.Fatalf("sort error, want: %s; got: %s", SerialIntArray(c.want), SerialIntArray(c.in))
 			}
 		}
 	}

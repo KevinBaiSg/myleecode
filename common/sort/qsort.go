@@ -1,7 +1,7 @@
 package sort
 
-func QuickSort(array []int) []int {
-	if len(array) < 2 { return array }
+func QuickSort(array []int) {
+	if len(array) < 2 { return }
 
 	pivot := array[0]
 	l, r := 0, len(array) - 1
@@ -18,5 +18,4 @@ func QuickSort(array []int) []int {
 
 	QuickSort(array[:l])
 	QuickSort(array[l + 1:])
-	return array
 }
