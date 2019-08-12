@@ -20,5 +20,5 @@
 > * 堆排序（HeapSort）：移除位在第一个数据的根节点，并做最大堆调整的递归运算  
 
 #### 平均复杂度
-堆排序的平均时间复杂度为 ${\displaystyle \mathrm {O} (n\log n)}$，空间复杂度为 ${\displaystyle \Theta (1)}$。
+堆排序的平均时间复杂度为 ![](http://latex.codecogs.com/gif.latex?%5Cbg_white%20O%28n%20%5Clog%20n%29)，空间复杂度为 ![](http://latex.codecogs.com/gif.latex?%5Cbg_white%20%24%7B%5Cdisplaystyle%20%5CTheta%20%281%29%7D%24)。
 
