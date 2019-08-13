@@ -23,12 +23,15 @@ leetcode Golang 实现，用于算法复习和 Golang 锻炼
 | 0001 | [Two Sum](https://github.com/KevinBaiSg/myleecode/tree/master/0001_two_sum) | Easy |
 | 0002 | [Add Two Numbers](https://github.com/KevinBaiSg/myleecode/tree/master/0002_add_two_numbers) | Medium |
 | 0003 | [Longest Substring Without Repeating Characters](https://github.com/KevinBaiSg/myleecode/tree/master/0003_longest_substring_without_repeating_characters) | Medium |
+| 0004 | [Median of Two Sorted Arrays](https://github.com/KevinBaiSg/myleecode/tree/master/0004_Median_of_Two_Sorted_Arrays) | Hard |
 | 0005 | [Longest Palindromic Substring](https://github.com/KevinBaiSg/myleecode/tree/master/0005_longest_palindromic_substring) | Medium |
 | 0006 | [ZigZag Conversion](https://github.com/KevinBaiSg/myleecode/tree/master/0006_ZigZag_Conversion) | Medium |
 | 0007 | [Reverse Integer](https://github.com/KevinBaiSg/myleecode/tree/master/0007_Reverse_Integer) | Easy |
 | 0010 | [Regular Expression Matching](https://github.com/KevinBaiSg/myleecode/tree/master/0010_Regular_Expression_Matching) | Hard |
+| 0011 | [Container With Most Water](https://github.com/KevinBaiSg/myleecode/tree/master/0011_Container_With_Most_Water) | Medium |
 | 0013 | [Roman to Integer](https://github.com/KevinBaiSg/myleecode/tree/master/0013_Roman_to_Integer) | Easy |
 | 0014 | [Longest Common Prefix](https://github.com/KevinBaiSg/myleecode/tree/master/0014_Longest_Common_Prefix) | Easy |
+| 0015 | [3Sum](https://github.com/KevinBaiSg/myleecode/tree/master/0015_3Sum) | Medium |
 | 0020 | [Valid Parentheses](https://github.com/KevinBaiSg/myleecode/tree/master/0020_Valid_Parentheses) | Easy |
 | 0021 | [Merge Two Sorted Lists](https://github.com/KevinBaiSg/myleecode/tree/master/0021_Merge_Two_Sorted_Lists) | Easy |
 | 0027 | [Remove Element](https://github.com/KevinBaiSg/myleecode/tree/master/0027_Remove_Element) | Easy |
@@ -67,10 +70,13 @@ leetcode Golang 实现，用于算法复习和 Golang 锻炼
 
 
 #### common 
-[common](https://github.com/KevinBaiSg/myleecode/tree/master/common) 下存放通用的实现，目前有：        
-`TreeNode` struct 定义，LeetCode tree node 定义  
-`MakeTree()` 用于测试程序从 string 生成 tree（DFS）    
-`collections` 包括 `Queue` 和 `Stack`，使用切片实现，在手写代码时可用
+[common](https://github.com/KevinBaiSg/myleecode/tree/master/common) 下存放通用的实现，
+这些实现主要是针对LeetCode，并且能够手写出来。 
+> 目前包括有：        
+>> `TreeNode` struct 定义，LeetCode tree node 定义  
+>> `MakeTree()` 用于测试程序从 string 生成 tree（DFS）    
+>> `collections` 包括 `Queue` 和 `Stack`，使用切片实现，在手写代码时可用   
+>> `sort` 包括快速排序和归并排序   
 
 #### boilerplate    
 [boilerplate](https://github.com/KevinBaiSg/myleecode/tree/master/boilerplate) 用于解新题时参考的模板 
