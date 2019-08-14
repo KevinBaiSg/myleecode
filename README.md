@@ -33,8 +33,10 @@ leetcode Golang 实现，用于算法复习和 Golang 锻炼
 | 0014 | [Longest Common Prefix](https://github.com/KevinBaiSg/myleecode/tree/master/0014_Longest_Common_Prefix) | Easy |
 | 0015 | [3Sum](https://github.com/KevinBaiSg/myleecode/tree/master/0015_3Sum) | Medium |
 | 0017 | [Letter Combinations of a Phone Number](https://github.com/KevinBaiSg/myleecode/tree/master/0017_Letter_Combinations_of_a_Phone_Number) | Medium |
+| 0019 | [Remove Nth Node From End of List](https://github.com/KevinBaiSg/myleecode/tree/master/0019_Remove_Nth_Node_From_End_of_List) | Medium |
 | 0020 | [Valid Parentheses](https://github.com/KevinBaiSg/myleecode/tree/master/0020_Valid_Parentheses) | Easy |
 | 0021 | [Merge Two Sorted Lists](https://github.com/KevinBaiSg/myleecode/tree/master/0021_Merge_Two_Sorted_Lists) | Easy |
+| 0022 | [3Sum](https://github.com/KevinBaiSg/myleecode/tree/master/0022_Generate_Parentheses) | Medium |
 | 0027 | [Remove Element](https://github.com/KevinBaiSg/myleecode/tree/master/0027_Remove_Element) | Easy |
 | 0028 | [Implement strStr](https://github.com/KevinBaiSg/myleecode/tree/master/0028_Implement_strStr) | Easy |
 | 0050 | [Pow(x, n)](https://github.com/KevinBaiSg/myleecode/tree/master/0050_Powx_n) | Medium |
