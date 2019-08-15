@@ -37,6 +37,7 @@ leetcode Golang 实现，用于算法复习和 Golang 锻炼
 | 0020 | [Valid Parentheses](https://github.com/KevinBaiSg/myleecode/tree/master/0020_Valid_Parentheses) | Easy |
 | 0021 | [Merge Two Sorted Lists](https://github.com/KevinBaiSg/myleecode/tree/master/0021_Merge_Two_Sorted_Lists) | Easy |
 | 0022 | [3Sum](https://github.com/KevinBaiSg/myleecode/tree/master/0022_Generate_Parentheses) | Medium |
+| 0023 | [Merge k Sorted Lists](https://github.com/KevinBaiSg/myleecode/tree/master/0023_Merge_k_Sorted_Lists) | Hard |
 | 0027 | [Remove Element](https://github.com/KevinBaiSg/myleecode/tree/master/0027_Remove_Element) | Easy |
 | 0028 | [Implement strStr](https://github.com/KevinBaiSg/myleecode/tree/master/0028_Implement_strStr) | Easy |
 | 0050 | [Pow(x, n)](https://github.com/KevinBaiSg/myleecode/tree/master/0050_Powx_n) | Medium |
