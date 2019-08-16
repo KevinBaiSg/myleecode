@@ -37,4 +37,5 @@ Explanation: The longest valid parentheses substring is "()()"
     dp[i] = dp[i-1] + 2 + dp[i-dp[i-1] - 2]
     
 #### solution1
-思路：xxxxxxx
+思路：Stack
+解决 Parentheses 常用的方法
