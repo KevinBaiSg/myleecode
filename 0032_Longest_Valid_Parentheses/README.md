@@ -36,6 +36,9 @@ Explanation: The longest valid parentheses substring is "()()"
     这时可以通过 dp[i-1] + 2 计算可得。但是还要注意一种情况，比如 `()(())`，这种情况还需要加上之前最长有效 Parentheses，最后的这种情况的dp方程为
     dp[i] = dp[i-1] + 2 + dp[i-dp[i-1] - 2]
     
-#### solution1
+#### solution2
 思路：Stack
 解决 Parentheses 常用的方法
+
+#### solution3
+思路：官方的计数法
