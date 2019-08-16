@@ -41,6 +41,7 @@ leetcode Golang 实现，用于算法复习和 Golang 锻炼
 | 0027 | [Remove Element](https://github.com/KevinBaiSg/myleecode/tree/master/0027_Remove_Element) | Easy |
 | 0028 | [Implement strStr](https://github.com/KevinBaiSg/myleecode/tree/master/0028_Implement_strStr) | Easy |
 | 0031 | [Next Permutation](https://github.com/KevinBaiSg/myleecode/tree/master/0031_Next_Permutation) | Medium |
+| 0032 | [Longest Valid Parentheses](https://github.com/KevinBaiSg/myleecode/tree/master/0032_Longest_Valid_Parentheses) | Hard |
 | 0050 | [Pow(x, n)](https://github.com/KevinBaiSg/myleecode/tree/master/0050_Powx_n) | Medium |
 | 0070 | [climbing stairs](https://github.com/KevinBaiSg/myleecode/tree/master/0070_climbing_stairs) | Easy |
 | 0071 | [Simplify Path](https://github.com/KevinBaiSg/myleecode/tree/master/0071_Simplify_Path) | Medium |
