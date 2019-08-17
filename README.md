@@ -1,6 +1,9 @@
-myleecode
+<div align="center">  
+
+My LeetCode [![My LeetCode][leetcode-image]][leetcode-url] 
 ===
-[![My LeetCode](https://img.shields.io/badge/LeetCode-KevinBai-brightgreen.svg)](https://leetcode-cn.com/kevinbaisg)
+
+</div>  
 
 leetcode Golang 实现，用于算法复习和 Golang 锻炼 
 
@@ -84,10 +87,15 @@ leetcode Golang 实现，用于算法复习和 Golang 锻炼
 >> `TreeNode` struct 定义，LeetCode tree node 定义  
 >> `MakeTree()` 用于测试程序从 string 生成 tree（DFS）    
 >> `collections` 包括 `Queue` 和 `Stack`，使用切片实现，在手写代码时可用   
->> `sort` 包括快速排序和归并排序   
+>> `sort` 包括快速排序和归并排序 
+>> `binarySearch` 二分查找
 
 #### boilerplate    
 [boilerplate](https://github.com/KevinBaiSg/myleecode/tree/master/boilerplate) 用于解新题时参考的模板 
 
 #### algorithm  
 [algorithm](https://github.com/KevinBaiSg/myleecode/tree/master/algorithm) 实现一些常用算法以及数据结构，目前包括树的 DFS 和 BFS 实现，DFS 包括了前序遍历、中序遍历、后序遍历的递归和非递归实现。  
+
+
+[leetcode-image]: https://img.shields.io/badge/LeetCode-KevinBai-brightgreen.svg
+[leetcode-url]: https://leetcode-cn.com/kevinbaisg
