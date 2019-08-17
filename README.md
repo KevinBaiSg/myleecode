@@ -43,6 +43,7 @@ leetcode Golang 实现，用于算法复习和 Golang 锻炼
 | 0031 | [Next Permutation](https://github.com/KevinBaiSg/myleecode/tree/master/0031_Next_Permutation) | Medium |
 | 0032 | [Longest Valid Parentheses](https://github.com/KevinBaiSg/myleecode/tree/master/0032_Longest_Valid_Parentheses) | Hard |
 | 0033 | [Search in Rotated Sorted Array](https://github.com/KevinBaiSg/myleecode/tree/master/0033_Search_in_Rotated_Sorted_Array) | Medium |
+| 0034 | [Find First and Last Position of Element in Sorted Array](https://github.com/KevinBaiSg/myleecode/tree/master/0034_Find_First_and_Last_Position_of_Element_in_Sorted_Array) | Medium |
 | 0050 | [Pow(x, n)](https://github.com/KevinBaiSg/myleecode/tree/master/0050_Powx_n) | Medium |
 | 0070 | [climbing stairs](https://github.com/KevinBaiSg/myleecode/tree/master/0070_climbing_stairs) | Easy |
 | 0071 | [Simplify Path](https://github.com/KevinBaiSg/myleecode/tree/master/0071_Simplify_Path) | Medium |
