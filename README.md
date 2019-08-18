@@ -5,7 +5,7 @@ My LeetCode [![My LeetCode][leetcode-image]][leetcode-url]
 
 </div>  
 
-leetcode Golang 实现，用于算法复习和 Golang 锻炼 
+leetcode Golang 实现
 
 ## 解题结构
 ```
