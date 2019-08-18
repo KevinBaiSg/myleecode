@@ -1,8 +1,8 @@
 package tree
 
 import (
-	. "github.com/KevinBaiSg/myleecode/common"
-	. "github.com/KevinBaiSg/myleecode/common/collections"
+	. "github.com/KevinBaiSg/MyLeetCode/common"
+	. "github.com/KevinBaiSg/MyLeetCode/common/collections"
 )
 
 func preOrderTraversalRecursion(root *TreeNode, result *[]int) {

@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"testing"
 
-	. "github.com/KevinBaiSg/myleecode/common/makeTree"
+	. "github.com/KevinBaiSg/MyLeetCode/common/makeTree"
 )
 
 func array2string(nodes []int) string {

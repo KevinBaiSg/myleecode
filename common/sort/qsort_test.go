@@ -3,7 +3,7 @@ package sort
 import (
 	"testing"
 
-	. "github.com/KevinBaiSg/myleecode/common"
+	. "github.com/KevinBaiSg/MyLeetCode/common"
 )
 
 func TestQuickSort(t *testing.T) {

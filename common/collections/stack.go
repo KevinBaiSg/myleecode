@@ -1,7 +1,7 @@
 package collections
 
 import (
-	. "github.com/KevinBaiSg/myleecode/common"
+	. "github.com/KevinBaiSg/MyLeetCode/common"
 )
 
 type Stack struct {

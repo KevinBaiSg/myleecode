@@ -4,8 +4,8 @@ import (
 	"strconv"
 	"strings"
 
-	. "github.com/KevinBaiSg/myleecode/common"
-	"github.com/KevinBaiSg/myleecode/common/collections"
+	. "github.com/KevinBaiSg/MyLeetCode/common"
+	"github.com/KevinBaiSg/MyLeetCode/common/collections"
 )
 
 func MakeTree(tree string) *TreeNode {

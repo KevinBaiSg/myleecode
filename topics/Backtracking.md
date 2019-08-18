@@ -101,7 +101,7 @@ try(int i)
 
 1. 八皇后问题是应用回溯法求解的典型案例。
 
-2. [Letter Combinations of a Phone Number](https://github.com/KevinBaiSg/myleecode/tree/master/0017_Letter_Combinations_of_a_Phone_Number)
+2. [Letter Combinations of a Phone Number](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0017_Letter_Combinations_of_a_Phone_Number)
 
 ## 参考文章
 

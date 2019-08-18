@@ -1,8 +1,8 @@
 package solution1
 
 import (
-	"github.com/KevinBaiSg/myleecode/common/collections"
-	"github.com/KevinBaiSg/myleecode/common/makeTree"
+	"github.com/KevinBaiSg/MyLeetCode/common/collections"
+	"github.com/KevinBaiSg/MyLeetCode/common/makeTree"
 )
 
 /**

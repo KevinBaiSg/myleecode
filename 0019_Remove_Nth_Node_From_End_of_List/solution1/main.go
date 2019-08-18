@@ -1,7 +1,7 @@
 package solution1
 
 import (
-	. "github.com/KevinBaiSg/myleecode/common"
+	. "github.com/KevinBaiSg/MyLeetCode/common"
 )
 
 func removeNthFromEnd(head *ListNode, n int) *ListNode {

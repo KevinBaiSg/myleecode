@@ -3,7 +3,7 @@ package solution1
 import (
 	"testing"
 
-	. "github.com/KevinBaiSg/myleecode/common"
+	. "github.com/KevinBaiSg/MyLeetCode/common"
 )
 
 func TestIsScramble(t *testing.T)  {

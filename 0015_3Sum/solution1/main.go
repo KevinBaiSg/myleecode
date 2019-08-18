@@ -1,6 +1,6 @@
 package solution1
 
-import . "github.com/KevinBaiSg/myleecode/common/sort"
+import . "github.com/KevinBaiSg/MyLeetCode/common/sort"
 
 func threeSum(nums []int) [][]int {
 	if len(nums) < 3 { return [][]int{} }
