@@ -23,5 +23,11 @@ Output: 6
 #### solution1
 思路：双指针
 
-#### solution1
-思路：xxxxxxx
+#### solution2
+思路：DP
+状态定义：dpLeft[i], dpRight[i]: 分别表示 i 位置左右两边最高墙
+状态方程：dpLeft[i] = max(dpLeft[i-1], height[i-1])
+        dpRight[i] = max(dpRight[i-1], height[i-1])
+        计算时注意边界
+        
+        
