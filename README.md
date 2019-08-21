@@ -53,6 +53,7 @@ leetcode Golang 实现
 | 0048 | [Rotate Image](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0048_Rotate_Image) | Medium |
 | 0049 | [Group Anagrams](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0049_Group_Anagrams) | Medium |
 | 0050 | [Pow(x, n)](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0050_Powx_n) | Medium |
+| 0053 | [Maximum Subarray](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0053_Maximum_Subarray) | Easy |
 | 0070 | [climbing stairs](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0070_climbing_stairs) | Easy |
 | 0071 | [Simplify Path](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0071_Simplify_Path) | Medium |
 | 0083 | [remove duplicates from sorted list](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0083_remove_duplicates_from_sorted_list) | Easy |
