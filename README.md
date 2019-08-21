@@ -51,6 +51,7 @@ leetcode Golang 实现
 | 0042 | [Trapping Rain Water](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0042_Trapping_Rain_Water) | Hard |
 | 0046 | [Permutations](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0046_Permutations) | Medium |
 | 0048 | [Rotate Image](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0048_Rotate_Image) | Medium |
+| 0049 | [Group Anagrams](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0049_Group_Anagrams) | Medium |
 | 0050 | [Pow(x, n)](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0050_Powx_n) | Medium |
 | 0070 | [climbing stairs](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0070_climbing_stairs) | Easy |
 | 0071 | [Simplify Path](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0071_Simplify_Path) | Medium |
