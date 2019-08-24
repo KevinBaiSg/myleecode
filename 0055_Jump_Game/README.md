@@ -38,5 +38,5 @@ Explanation: You will always arrive at index 3 no matter what. Its maximum
                     DP[i] || DP[i+j] // i+j < len(nums)
                 }
             
-#### solution1
-思路：xxxxxxx
+#### solution2
+思路：贪心算法
