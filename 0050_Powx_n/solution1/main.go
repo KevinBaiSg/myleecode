@@ -16,7 +16,7 @@ func myPow(x float64, n int) float64 {
 		x = 1 / x
 	}
 
-	if n % 2 == 0 {
+	if n & 1 == 0 {
 		return myPow(x * x, n / 2)
 	} else {
 		return x * myPow(x * x, n / 2)
