@@ -44,3 +44,4 @@ If this function is called many times, how would you optimize it?
 
 #### solution2
 思路：
+[算法-求二进制数中1的个数](https://www.cnblogs.com/graphics/archive/2010/06/21/1752421.html) 中提到的 `完美法`
