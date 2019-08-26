@@ -79,6 +79,7 @@ leetcode Golang 实现
 | 0203 | [Remove Linked List Elements](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0203_Remove_Linked_List_Elements) | Easy |
 | 0206 | [Reverse Linked List](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0206_Reverse_Linked_List) | Easy |
 | 0225 | [Implement Stack using Queues](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0225_Implement_Stack_using_Queues) | Easy |
+| 0231 | [Power of Two](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0231_Power_of_Two) | Easy |
 | 0232 | [Implement Queue using Stacks](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0232_Implement_Queue_using_Stacks) | Easy |
 | 0234 | [Palindrome Linked List](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0234_Palindrome_Linked_List) | Easy |
 | 0309 | [Best Time to Buy and Sell Stock with CoolDown](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0309_Best_Time_to_Buy_and_Sell_Stock_with_Cooldown) | Medium |
