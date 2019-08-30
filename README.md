@@ -83,6 +83,7 @@ leetcode Golang 实现
 | 0232 | [Implement Queue using Stacks](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0232_Implement_Queue_using_Stacks) | Easy |
 | 0234 | [Palindrome Linked List](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0234_Palindrome_Linked_List) | Easy |
 | 0309 | [Best Time to Buy and Sell Stock with CoolDown](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0309_Best_Time_to_Buy_and_Sell_Stock_with_Cooldown) | Medium |
+| 0338 | [Counting Bits](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0338_Counting_Bits) | Medium |
 | 0443 | [String Compression](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0443_String_Compression) | Easy |
 | 0509 | [Fibonacci Number](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0509_Fibonacci_Number) | Easy |
 | 0563 | [Binary Tree Tilt](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0563_Binary_Tree_Tilt) | Easy |
