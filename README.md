@@ -76,6 +76,7 @@ leetcode Golang 实现
 | 0160 | [Intersection of Two Linked Lists](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0160_Intersection_of_Two_Linked_Lists) | Easy |
 | 0169 | [Majority Element](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0169_Majority_Element) | Easy |
 | 0188 | [Best Time to Buy and Sell Stock IV](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0188_Best_Time_to_Buy_and_Sell_Stock_IV) | Hard |
+| 0190 | [Reverse Bits](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0190_Reverse_Bits) | Easy |
 | 0191 | [Number of 1 Bits](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0191_Number_of_1_Bits) | Easy |
 | 0203 | [Remove Linked List Elements](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0203_Remove_Linked_List_Elements) | Easy |
 | 0206 | [Reverse Linked List](https://github.com/KevinBaiSg/MyLeetCode/tree/master/0206_Reverse_Linked_List) | Easy |
