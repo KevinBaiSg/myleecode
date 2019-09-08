@@ -14,6 +14,7 @@ func TestIsScramble(t *testing.T)  {
 		want 	[]int
 	}{
 		{[]int{5, 3, 7, 2, 4, 9, 19, 14, 73, 88, 6, 64, 17, 52}, 4, []int{52, 64, 73, 88}},
+		{[]int{3,2,1,5,6,4}, 2, []int{5, 6}},
 	}
 	for _, c := range cases {
 		tops := topK(c.in, c.k)

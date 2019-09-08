@@ -9,22 +9,32 @@ func topK(nums []int, k int) []int {
 func quickTop(nums []int, first, end, k int) {
 	if first == end { return }
 
-	pivot := nums[first]
+	i := partition(nums, first, end)
+
+	if i-first+1 == k {
+		return
+	} else if i-first+1 > k {
+		quickTop(nums, first, i-1, k)
+	} else {
+		quickTop(nums, i+1, end, k-(i-first+1))
+	}
+}
+
+func partition(nums []int, first, end int) int {
 	l, r := first, end
-	for i := l+1; i < r; {
+	i := l
+	pivot := nums[l]
+	for i <= r {
 		if nums[i] > pivot {
 			nums[l], nums[i] = nums[i], nums[l]
-			l++; i++
-		} else {
-			nums[i], nums[r] = nums[r], nums[i]
+			i++; l++
+		} else if nums[i] < pivot {
+			nums[r], nums[i] = nums[i], nums[r]
 			r--
+		} else {
+			i++
 		}
 	}
-	if l - first + 1 == k {
-		return
-	} else if l - first > k {
-		quickTop(nums, first, l - 1, k)
-	} else {
-		quickTop(nums, l, end, k+first-l)
-	}
+
+	return i-1
 }

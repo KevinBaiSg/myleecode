@@ -23,11 +23,12 @@ Example：
 所以时间复杂度为最小堆的排序时间复杂度 O(n log n), 空间复杂度为 O(1)
 
 #### solution4
-思路：减治法
+思路：QuickSelect 算法
 其实就是修改快排的算法
 
 ## LeetCode 类似问题
 [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
+[324. Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/)
 
 ## 参考
 [1. 拜托，面试别再问我TopK了！！！](https://mp.weixin.qq.com/s/FFsvWXiaZK96PtUg-mmtEw)
